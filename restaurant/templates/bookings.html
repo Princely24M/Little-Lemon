@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %} - Reservations{% endblock %}
+{% block content %}
+<h1>All Reservations</h1>
+<div class="columns">
+  <section><pre id="bookings">{{ bookings }}</pre></section>
+  <section class="map">
+    <iframe title="Little Lemon location" loading="lazy" height="260"
+      src="https://maps.google.com/maps?q=Hyde%20Park%2C%20Chicago&z=13&output=embed"></iframe>
+  </section>
+</div>
+{% endblock %}

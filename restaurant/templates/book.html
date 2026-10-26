@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} - Book{% endblock %}
+{% block content %}
+<h1>Make a reservation</h1>
+<div class="columns">
+  <section>
+    <form id="booking-form" novalidate>
+      {% csrf_token %}
+      <label for="first_name">Name:</label>
+      <input type="text" id="first_name" placeholder="Your Name" maxlength="200">
+      <label for="reservation_date">Reservation date:</label>
+      <input type="date" id="reservation_date">
+      <label for="reservation_slot">Reservation time:</label>
+      <select id="reservation_slot"></select>
+      <button type="submit" id="button">Reserve</button>
+      <p id="message" role="status"></p>
+    </form>
+  </section>
+  <section>
+    <h2>Bookings For <span id="selected-date"></span></h2>
+    <div id="today"></div>
+  </section>
+</div>
+<script src="{% static 'js/book.js' %}"></script>
+{% endblock %}

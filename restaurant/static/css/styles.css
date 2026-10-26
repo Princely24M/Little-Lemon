@@ -1,0 +1,28 @@
+:root { --green: #495e57; --light: #edefee; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Karla', Arial, sans-serif; color: #222; background: #fff; }
+.page { max-width: 1000px; margin: 0 auto; padding: 0 .75rem; }
+header { display: flex; align-items: center; justify-content: center; gap: 1.2rem; padding: 1.4rem 0 1rem; }
+header img { height: 84px; }
+.brand { font-family: 'Markazi Text', Georgia, serif; font-size: 2.4rem; letter-spacing: .22em; color: var(--green); font-weight: 500; }
+nav { background: var(--green); text-align: center; padding: .55rem; }
+nav a { color: #fff; text-decoration: none; margin: 0 .55rem; font-size: 1.1rem; }
+main { border: 1px solid #e8e8e8; margin: .6rem 0; padding: 1rem 1.3rem 1.5rem; }
+h1 { font-family: 'Markazi Text', Georgia, serif; font-weight: 700; font-size: 3.2rem; margin: .3rem 0 1rem; color: #111; }
+h2 { font-family: 'Markazi Text', Georgia, serif; font-weight: 700; font-size: 2rem; margin: .2rem 0 1.1rem; color: #333; }
+.columns { display: flex; gap: 2rem; flex-wrap: wrap; }
+.columns > section { flex: 1 1 280px; }
+label { display: block; margin-top: 1rem; font-weight: 700; color: #111; }
+input, select { display: block; width: 100%; margin-top: .3rem; padding: .5rem .6rem; border: 1px solid #999; border-radius: 3px; font: inherit; font-size: .9rem; background: #fff; }
+button { width: 100%; margin-top: 1.2rem; padding: .55rem; background: var(--green); color: #fff; border: 0; border-radius: 4px; font: 1rem Arial, sans-serif; cursor: pointer; }
+button:hover { background: #3a4b45; }
+#today p { margin: 0 0 1.1rem; font-size: 1rem; }
+#message { min-height: 1.4em; font-size: .9rem; }
+#message.error { color: #b00020; }
+#message.ok { color: #1b7a3a; }
+pre { margin: 0; overflow-x: auto; font-size: .72rem; line-height: 1.25; }
+.map iframe { width: 100%; border: 0; display: block; }
+footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; background: var(--light); padding: 1rem; margin-bottom: 1rem; }
+.foot-logo { width: 42px; height: 46px; border: 1px solid #444; display: flex; align-items: center; justify-content: center; }
+.foot-logo img { height: 34px; }
+.foot-right { flex: 0 0 62%; border-top: 1px solid #333; padding-top: .9rem; text-align: right; }
